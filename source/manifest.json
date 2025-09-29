@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "JiraTicketsHelper",
+  "version": "1.0",
+  "description": "Add helping buttons for work with JIRA",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.atlassian.net/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "copyImage.png"
+  ]
+}

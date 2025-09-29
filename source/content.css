@@ -1,0 +1,33 @@
+.jira-helper-button {
+    background-color: #245dae;
+    cursor: pointer;
+    padding: 4px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.jira-helper-button:hover {
+    background-color: #164895;
+}
+
+.jira-helper-button:focus {
+    outline: none;
+}
+
+.jira-helper-icon {
+    filter: brightness(0) saturate(100%) invert(94%) sepia(0%) saturate(7492%) hue-rotate(180deg) brightness(104%) contrast(104%);
+    width: 12px;
+    height: 16px;
+    display: block;
+}
+
+/* Только для кнопок, висящих поверх div */
+.jira-helper-overlay {
+    position: absolute;
+    left: -22px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
